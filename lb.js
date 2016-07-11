@@ -80,9 +80,10 @@ var server = net.createServer(function(socket) {
   });
 });
 
-setInterval(function() {
-  console.dir(targets);
-}, 2000);
+// setInterval(function() {
+//   console.dir(targets);
+// }, 2000);
+
 server.listen(7000, function() {
-  console.log('listening on 7000');
+  console.log('listening on 7000 redirecting to ', targets);
 });

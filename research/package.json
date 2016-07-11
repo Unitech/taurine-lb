@@ -1,0 +1,19 @@
+{
+  "name": "rocky-lb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "distribute": "^0.1.4",
+    "express": "^4.14.0",
+    "request": "*",
+    "rocky": "^0.4.12",
+    "websocket-driver" : "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

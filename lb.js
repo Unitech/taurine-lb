@@ -8,19 +8,13 @@ var targets = [{
   port: 8001,
   active_conn : 0,
   errors : 0
+}, {
+  host: '127.0.0.1',
+  port: 8002,
+  active_conn : 0,
+  errors : 0
 }];
 
-// , {
-//   host: '127.0.0.1',
-//   port: 8002,
-//   active_conn : 0,
-//   errors : 0
-// }, {
-//   host: '127.0.0.1',
-//   port: 8003,
-//   active_conn : 0,
-//   errors : 0
-// }
 var rri = 0;
 
 function iphash (ip, len) {
@@ -79,10 +73,6 @@ var server = net.createServer(function(socket) {
     socket.end();
   });
 });
-
-// setInterval(function() {
-//   console.dir(targets);
-// }, 2000);
 
 server.listen(7000, function() {
   console.log('listening on 7000 redirecting to ', targets);
